@@ -1,0 +1,16 @@
+{
+  "name": "projektas10",
+  "version": "1.0.0",
+  "description": "VaidasDbr",
+  "main": "index.js",
+  "scripts": {
+    "server": "dead-server --host=localhost --port=5555",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "VaidasDbr",
+  "license": "MIT",
+  "devDependencies": {
+    "dead-server": "^1.0.9"
+  }
+}
