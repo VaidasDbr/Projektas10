@@ -1,1 +1,1 @@
-hello! Rock-Paper-Scissors
+hello! 1.5v Rock-Paper-Scissors, vaidas@gmail.com
