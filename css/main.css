@@ -1,14 +1,46 @@
 body {
+    font-family: serif;
     text-align: center;
-    font-size: 3rem;
-    background-color: cornsilk;
-    color: fuchsia;
+    font-size: 5vmin;
+    font-weight: bold;
+    background-color: azure;
+    color: gold;
+}
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1vmin 20vmin;
+    width: 100%;
 }
 button {
-    border-radius: 35%;
-    padding: 0.5rem;
+    transition: 0.3s;
+    width: 30vmin;
+    height: 30vmin;
+    font-size: 5vmin;
+    margin-top: -7vmin;
     cursor: pointer;
-    font-size: 2rem;
-    background-color: yellow;
-    color: blue;
+    background-color: white;
+    color: fuchsia;
 }
+button:hover {
+    transition: 0.3s;
+    box-shadow: 1vmin 1vmin 3vmin black;
+}
+img {
+    width: 20vmin;
+    height: 20vmin;
+}
+.psc {
+    font-size: 40vmin;
+    float: left;
+    margin-left: 20vmin;
+    margin-top: -10vmin;
+    color:green;
+}
+.csc {
+    font-size: 40vmin;
+    float: right;
+    margin-right: 20vmin;
+    margin-top: -10vmin;
+    color: red;

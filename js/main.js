@@ -55,8 +55,8 @@ function compareInputs(pInput, cInput) {
 }
 
 function updateScore() {
-  document.getElementById("p-score").textContent = pScore;
-  document.getElementById("c-score").textContent = cScore;
+  document.getElementById("p_score").textContent = pScore;
+  document.getElementById("c_score").textContent = cScore;
 }
 
 function checkWinner() {

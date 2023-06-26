@@ -6,16 +6,25 @@
     <title>Rock-Paper-Scissors</title>
     <link rel="stylesheet" href="./css/main.css">
 </head>
-<body>
     <body>
-        <h1>Rock-Paper-Scissors</h1>
-        <h2>Win 5 rounds</h2>
-        <h3>
-          Player <span id="p-score">0</span> - <span id="c-score">0</span> Computer
-        </h3>
-        <button class="options">Rock</button>
-        <button class="options">Paper</button>
-        <button class="options">Scissors</button>
+        <div style="font-size: 10vmin;">Rock-Paper-Scissors</div>
+        <div id="p_score" class="psc">0</div>
+        <div id="c_score" class="csc">0</div>
+        <div style="float: left; margin-left: -36vmin; color: blue;">Player<br>score
+        </div>
+        <div style="float: right; margin-right: -40vmin; color: blue;">Computer<br>score
+        </div>
+        <section>
+            <button class="options">
+                <img src="./img/rock.jpg" alt="Rock">Rock
+            </button>
+            <button class="options">
+                <img src="./img/paper.jfif" alt="Paper">Paper
+            </button>
+            <button class="options">
+                <img src="./img/scissors.jfif" alt="Scissors">Scissors
+            </button>
+        </section>
         <script src="./js/main.js"></script>
-      </body>
+    </body>
 </html>
