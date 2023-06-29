@@ -1,1 +1,0 @@
-hello! 1.5v Rock-Paper-Scissors, all resolution screen,vaidasdbr@gmail.com .

@@ -1,13 +1,14 @@
-const options = document.querySelectorAll(".options");
+let options = document.querySelectorAll(".options");
 let pScore = 0;
 let cScore = 0;
+let table = "";
 
 options.forEach((option) => {
   option.addEventListener("click", function () {
-    const pInput = this.textContent;
+    let pInput = this.textContent;
 
-    const cOptions = ["Rock", "Paper", "Scissors"];
-    const cInput = cOptions[Math.floor(Math.random() * 3)];
+    let cOptions = ["Rock", "Paper", "Scissors"];
+    let cInput = cOptions[Math.floor(Math.random() * 3)];
 
     compareInputs(pInput, cInput);
     updateScore();
@@ -19,36 +20,36 @@ options.forEach((option) => {
 });
 
 function compareInputs(pInput, cInput) {
-  const currentMatch = `${pInput} vs ${cInput}`;
+  let currentMatch = `${pInput} vs ${cInput}`;
   if (pInput === cInput) {
-    alert(`${currentMatch} is a Tie`);
+    table = (`${currentMatch} is a Tie`);
     return;
   }
 
   if (pInput === "Rock") {
     if (cInput === "Scissors") {
-      alert(`${currentMatch} = You Win`);
+      table = (`${currentMatch} You Win`);
       pScore++;
     } else {
-      alert(`${currentMatch} = Computer Wins`);
+      table = (`${currentMatch} You Lose`);
       cScore++;
     }
   }
   else if (pInput === "Paper") {
     if (cInput === "Rock") {
-      alert(`${currentMatch} = You Win`);
+      table = (`${currentMatch} You Win`);
       pScore++;
     } else {
-      alert(`${currentMatch} = Computer Wins`);
+      table = (`${currentMatch} You Lose`);
       cScore++;
     }
   }
   else {
     if (cInput === "Paper") {
-      alert(`${currentMatch} = You Win`);
+      table = (`${currentMatch} You Win`);
       pScore++;
     } else {
-      alert(`${currentMatch} = Computer Wins`);
+      table = (`${currentMatch} You Lose`);
       cScore++;
     }
   }
@@ -57,15 +58,16 @@ function compareInputs(pInput, cInput) {
 function updateScore() {
   document.getElementById("p_score").textContent = pScore;
   document.getElementById("c_score").textContent = cScore;
+  document.getElementById("win").textContent = table;
 }
 
 function checkWinner() {
   if (pScore === 5 || cScore === 5) {
-    const winner =
+    let winner =
       pScore === 5
-        ? "You win! Congratulations!"
-        : "Computer win! You lose!";
-    alert(winner);
+        ? "You win!"
+        : "You lose!";
+    document.getElementById("win").textContent = winner;
     return true;
   }
   return false;
